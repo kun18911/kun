@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>candy</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
+		<link rel="stylesheet" href="mainLayout.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.2/seedrandom.js"></script>
+		<script src="candy.js"></script>
+		<script src="board.js"></script>
+		<script src="rules.js"></script>
+		<script src="handler.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3" id="firstColumn">
+					<h1 id="gameTitle">candy</h1>
+					<label id="totalScoreLabel">Total Points: <span id="totalPoints">0</span></label><br/>
+					<div id="colorScores">
+						<label class="colorScoreLabel" id="redScoreLabel">Red Points: <span id="redPoints">0</span></label><br/>
+						<label class="colorScoreLabel" id="yellowScoreLabel">Yellow Points: <span id="yellowPoints">0</span></label><br/>
+						<label class="colorScoreLabel" id="blueScoreLabel">Blue Points: <span id="bluePoints">0</span></label><br/>
+						<label class="colorScoreLabel" id="greenScoreLabel">Green Points: <span id="greenPoints">0</span></label><br/>
+						<label class="colorScoreLabel" id="orangeScoreLabel">Orange Points: <span id="orangePoints">0</span></label><br/>
+						<label class="colorScoreLabel" id="purpleScoreLabel">Purple Points: <span id="purplePoints">0</span></label><br/>
+						<!-- Add more color sections as needed -->
+					</div>
+					<input class="btn btn-default" type="button" id="newGame" value="Ván mới"><br/>
+					<input class="btn btn-default" type="button" id="showMove" value="Hiển thị nước đi">
+				</div>
+				
+				<div class="col-md-6" id="mainColumn">
+					<div id="cover"></div>
+					<div id="gameBoard"></div>
+					<canvas id="canvas" width="320" height="320">
+						<p>Canvas not supported on your browser.</p>
+					</canvas>
+				</div>
+				
+				<div class="col-md-3" id="lastColumn"></div>
+			</div>
+		</div>
+	</body>
+</html>
